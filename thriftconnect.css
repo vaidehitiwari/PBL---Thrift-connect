@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.container {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 150px; /* Changed to make it more rectangular */
+    background: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-wrapper {
+    width: 100%;
+    background: #080908;
+}
+
+.nav-wrapper nav {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    width: 100%;
+    padding: 1em 2em; /* Added padding to move links away from edges */
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+.link span {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 16px; /* Smaller text size */
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+    margin-left: 20px; /* Space between links */
+}
+
+.link span {
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 1px; /* Changed lpx to 1px for clarity */
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+/* Styling for the custom cursor */
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+/* Expanding effect on hover */
+.link:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(8);
+  width: 60px; /* Adjust expanded size as needed */
+  height: 60px; /* Adjust expanded size as needed */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 1024px) {
+  .nav-wrapper nav {
+    flex-direction: column;
+  }
+}
