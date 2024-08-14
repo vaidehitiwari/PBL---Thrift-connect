@@ -6,7 +6,50 @@ body {
   padding: 0;
 }
 
-header {
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    background-color: #630431;
+    padding: 10px 20px;
+}
+
+.dropdown {
+    position: relative;
+    margin-right: 20px; /* Space between dropdowns */
+}
+
+.button {
+    background-color: #fff7fa;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e68a9f;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex; /* Show dropdown menu on hover */
+}
+
+  header {
   background-color: #F2BBBB; 
   padding: 80px;
   text-align: center;
@@ -50,6 +93,7 @@ h2 {
 .post:hover {
   background-color: #f3cbd8; 
 }
+
 
 .post img {
   width: 100%;
