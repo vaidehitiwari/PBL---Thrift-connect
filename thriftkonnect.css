@@ -47,6 +47,10 @@ h2 {
   background-color: #fff; 
 }
 
+.post:hover {
+  background-color: #f3cbd8; 
+}
+
 .post img {
   width: 100%;
   height: 375px;
