@@ -10,7 +10,7 @@ body {
 nav {
     height: 10vh;
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: center;
     background-color: #630431;
     padding: 10px 20px;
 }
@@ -21,16 +21,19 @@ nav {
 }
 
 .button {
-    background-color: #fff7fa;
+    background-color:#630431;
     color: #000000;
     padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 16px;
+    top: 20px;
+    right: 20px;
 }
 
 .button:hover {
-    background-color: #e68a9f;
+   background-color:#F2BBBB;
 }
 
 
