@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000; /* Change background color to white */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color:black;
+    padding: 20px 0;
+}
+
+header h1 {
+    color:   #ffc0cb;
+    background-color: black;
+    font-size: 48px;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px; /* Add space below the header */
+}
+
+.nav-text {
+    color: #ffffff; /* White color for text links */
+    font-size: 18px; /* Font size for nav links */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Poppins', sans-serif; /* Same font as header */
+}
+
+section {
+    text-align: center;
+    margin: 100px auto;
+}
+
+h2 {
+    color: #816167; /* Keep the original heading color */
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px; /* Increase space between product cards */
+    position: relative;
+}
+
+/* Base product card style */
+.product {
+    background-color: #f8f8f8; /* Light gray background for product cards */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 450px; /* Adjust card width */
+    height: 300px;
+    text-align: left; /* Align text to the left */
+    position: relative;
+    display: flex; /* Flexbox to align image and text box */
+    justify-content: space-between; /* Space between image and text box */
+    align-items: center; /* Align items vertically */
+}
+
+/* Alternating diagonal positioning with more pronounced shifts */
+.product:nth-child(odd) {
+    transform: translateX(-150px); /* Adjust shift to the left */
+}
+
+.product:nth-child(even) {
+    transform: translateX(150px); /* Adjust shift to the right */
+}
+
+.product img {
+    width: 90%; /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #362727;
+}
+
+.product .description {
+    width: 50%;
+    margin-left: 20px;
+    color: #000000; /* Black text for the placeholder */
+    font-size: 16px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .product {
+        width: 100%;
+        max-width: 320px;
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        transform: none; /* Reset transforms on small screens */
+    }
+
+    .product img {
+        width: 100%; /* Full-width image on small screens */
+        margin-bottom: 10px;
+    }
+
+    .product .description {
+        width: 100%;
+        margin-left: 0;
+    }
+}
